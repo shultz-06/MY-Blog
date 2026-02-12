@@ -20,7 +20,7 @@ export default function ResumePage() {
                             My <span className="gradient-text">Resume</span>
                         </h1>
                         <p className="text-lg text-[var(--color-foreground-muted)] mb-8">
-                            Full Stack Developer with expertise in building scalable web applications
+                            {personalInfo.role}
                         </p>
                         <a
                             href={personalInfo.resumeUrl}
@@ -145,9 +145,9 @@ export default function ResumePage() {
 
                                     <div className="space-y-6">
                                         <div>
-                                            <h4 className="text-sm font-semibold text-[var(--color-foreground-muted)] uppercase mb-3">Frontend</h4>
+                                            <h4 className="text-sm font-semibold text-[var(--color-foreground-muted)] uppercase mb-3">Finance</h4>
                                             <div className="flex flex-wrap gap-2">
-                                                {skills.frontend.map((skill) => (
+                                                {skills.finance.map((skill) => (
                                                     <span key={skill.name} className="text-xs px-2 py-1 rounded bg-[var(--color-background-alt)] text-[var(--color-foreground)]">
                                                         {skill.name}
                                                     </span>
@@ -156,9 +156,9 @@ export default function ResumePage() {
                                         </div>
 
                                         <div>
-                                            <h4 className="text-sm font-semibold text-[var(--color-foreground-muted)] uppercase mb-3">Backend</h4>
+                                            <h4 className="text-sm font-semibold text-[var(--color-foreground-muted)] uppercase mb-3">Operations</h4>
                                             <div className="flex flex-wrap gap-2">
-                                                {skills.backend.map((skill) => (
+                                                {skills.operations.map((skill) => (
                                                     <span key={skill.name} className="text-xs px-2 py-1 rounded bg-[var(--color-background-alt)] text-[var(--color-foreground)]">
                                                         {skill.name}
                                                     </span>
@@ -167,9 +167,20 @@ export default function ResumePage() {
                                         </div>
 
                                         <div>
-                                            <h4 className="text-sm font-semibold text-[var(--color-foreground-muted)] uppercase mb-3">DevOps</h4>
+                                            <h4 className="text-sm font-semibold text-[var(--color-foreground-muted)] uppercase mb-3">Tools</h4>
                                             <div className="flex flex-wrap gap-2">
-                                                {skills.devops.map((skill) => (
+                                                {skills.tools.map((skill) => (
+                                                    <span key={skill.name} className="text-xs px-2 py-1 rounded bg-[var(--color-background-alt)] text-[var(--color-foreground)]">
+                                                        {skill.name}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <h4 className="text-sm font-semibold text-[var(--color-foreground-muted)] uppercase mb-3">Soft Skills</h4>
+                                            <div className="flex flex-wrap gap-2">
+                                                {skills.soft.map((skill) => (
                                                     <span key={skill.name} className="text-xs px-2 py-1 rounded bg-[var(--color-background-alt)] text-[var(--color-foreground)]">
                                                         {skill.name}
                                                     </span>

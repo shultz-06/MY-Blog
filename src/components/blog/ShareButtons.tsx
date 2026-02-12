@@ -1,6 +1,7 @@
 'use client';
 
 import { Share2, Twitter, Linkedin, Link as LinkIcon } from 'lucide-react';
+import { siteInfo } from '@/data/siteData';
 
 interface ShareButtonsProps {
     title: string;
@@ -8,7 +9,7 @@ interface ShareButtonsProps {
 }
 
 export function ShareButtons({ title, slug }: ShareButtonsProps) {
-    const url = `https://yourportfolio.com/blog/${slug}`;
+    const url = `${siteInfo.baseUrl}/blog/${slug}`;
 
     const handleCopyLink = () => {
         navigator.clipboard.writeText(url);

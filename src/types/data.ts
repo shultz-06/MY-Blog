@@ -57,6 +57,7 @@ export interface InfoFragment {
     email: string;
     phone?: string;
     address?: string;
+    baseUrl?: string;
     socialLinks: {
         items: SocialLinkFragment[];
     };

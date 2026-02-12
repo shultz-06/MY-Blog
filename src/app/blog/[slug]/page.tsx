@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { ArrowLeft, Calendar, Clock, User } from 'lucide-react';
 import { blogPosts, getPostBySlug, getRecentPosts } from '@/data/blog';
 import { BlogCard } from '@/components/ui';
+import { personalInfo } from '@/data/personalInfo';
 import { ShareButtons } from '@/components/blog/ShareButtons';
 
 interface BlogPostPageProps {
@@ -196,7 +197,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                                     </div>
                                     <div>
                                         <p className="font-medium text-[var(--color-foreground)]">{post.author}</p>
-                                        <p className="text-sm text-[var(--color-foreground-muted)]">Full Stack Developer</p>
+                                        <p className="text-sm text-[var(--color-foreground-muted)]">{personalInfo.role}</p>
                                     </div>
                                 </div>
                             </div>

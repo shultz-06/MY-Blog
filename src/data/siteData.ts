@@ -6,6 +6,7 @@ export const siteInfo: InfoFragment = {
     title: personalInfo.name,
     subtitle: personalInfo.role,
     heading: personalInfo.tagline,
+    baseUrl: "https://shilpapujar.com",
     email: personalInfo.email,
     phone: personalInfo.phone,
     address: personalInfo.location,
