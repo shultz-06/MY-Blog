@@ -108,39 +108,29 @@ export default function AboutPage() {
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                            Skills & <span className="gradient-text">Technologies</span>
+                            Skills & <span className="gradient-text">Expertise</span>
                         </h2>
                         <p className="text-[var(--color-foreground-muted)] max-w-2xl mx-auto">
-                            A comprehensive overview of my technical skills and proficiency levels
+                            A comprehensive overview of my professional skills and proficiency levels
                         </p>
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {/* Frontend */}
+                        {/* Finance */}
                         <div className="card">
-                            <h3 className="text-lg font-semibold mb-6 text-[var(--color-primary)]">Frontend</h3>
+                            <h3 className="text-lg font-semibold mb-6 text-[var(--color-primary)]">Finance</h3>
                             <div className="space-y-4">
-                                {skills.frontend.map((skill) => (
+                                {skills.finance.map((skill) => (
                                     <SkillBar key={skill.name} name={skill.name} level={skill.level} icon={skill.icon} />
                                 ))}
                             </div>
                         </div>
 
-                        {/* Backend */}
+                        {/* Operations */}
                         <div className="card">
-                            <h3 className="text-lg font-semibold mb-6 text-[var(--color-secondary)]">Backend</h3>
+                            <h3 className="text-lg font-semibold mb-6 text-[var(--color-secondary)]">Operations</h3>
                             <div className="space-y-4">
-                                {skills.backend.map((skill) => (
-                                    <SkillBar key={skill.name} name={skill.name} level={skill.level} icon={skill.icon} />
-                                ))}
-                            </div>
-                        </div>
-
-                        {/* DevOps */}
-                        <div className="card">
-                            <h3 className="text-lg font-semibold mb-6 text-[var(--color-accent)]">DevOps</h3>
-                            <div className="space-y-4">
-                                {skills.devops.map((skill) => (
+                                {skills.operations.map((skill) => (
                                     <SkillBar key={skill.name} name={skill.name} level={skill.level} icon={skill.icon} />
                                 ))}
                             </div>
@@ -148,9 +138,19 @@ export default function AboutPage() {
 
                         {/* Tools */}
                         <div className="card">
-                            <h3 className="text-lg font-semibold mb-6 text-orange-500">Tools</h3>
+                            <h3 className="text-lg font-semibold mb-6 text-[var(--color-accent)]">Tools</h3>
                             <div className="space-y-4">
                                 {skills.tools.map((skill) => (
+                                    <SkillBar key={skill.name} name={skill.name} level={skill.level} icon={skill.icon} />
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Soft Skills */}
+                        <div className="card">
+                            <h3 className="text-lg font-semibold mb-6 text-orange-500">Soft Skills</h3>
+                            <div className="space-y-4">
+                                {skills.soft.map((skill) => (
                                     <SkillBar key={skill.name} name={skill.name} level={skill.level} icon={skill.icon} />
                                 ))}
                             </div>

@@ -1,209 +1,178 @@
-// Personal Information - Easy to customize
+// Personal Information - Customized for MBA Student
 export const personalInfo = {
-    name: "Your Name",
-    role: "Full Stack Developer",
-    tagline: "Building digital experiences that make a difference.",
-    shortBio: "A passionate Full Stack Developer with expertise in modern web technologies. I love turning complex problems into simple, beautiful solutions.",
-    email: "hello@example.com",
-    location: "San Francisco, CA",
-    phone: "+1 (555) 123-4567",
+    name: "Shilpa Pujar",
+    role: "MBA Student | Finance & Operations",
+    tagline: "Exploring the intersection of finance, strategy, and creative expression.",
+    shortBio: "An MBA student specializing in Finance and Operations, passionate about research, strategic thinking, and creative writing. I believe in the power of ideas to transform businesses and lives.",
+    email: "hello@shilpapujar.com",
+    location: "India",
+    phone: "+91 XXXXX XXXXX",
     resumeUrl: "/resume.pdf",
     profileImage: "/images/profile.jpg",
 
     // Social Links
     social: {
-        github: "https://github.com/yourusername",
-        linkedin: "https://linkedin.com/in/yourusername",
-        twitter: "https://twitter.com/yourusername",
-        instagram: "https://instagram.com/yourusername",
-        youtube: "https://youtube.com/@yourusername",
+        github: "https://github.com/shultz-06",
+        linkedin: "https://linkedin.com/in/shilpapujar",
+        twitter: "https://twitter.com/shilpapujar",
+        instagram: "https://instagram.com/shilpapujar",
+        medium: "https://medium.com/@shilpapujar",
     },
 
     // Extended Bio for About page
-    bio: `I'm a Full Stack Developer with over 5 years of experience building web applications that solve real-world problems. My journey in tech started when I built my first website at 15, and I haven't stopped learning since.
+    bio: `I'm currently pursuing my MBA with a specialization in Finance and Operations. My academic journey has been shaped by a deep curiosity for understanding how businesses operate, make financial decisions, and create value.
 
-I specialize in React, Next.js, Node.js, and cloud technologies. I'm passionate about writing clean, maintainable code and creating user experiences that are both beautiful and functional.
+Beyond the world of numbers and spreadsheets, I find joy in creative expression through writing—be it articles on business trends, research papers on emerging topics, or poetry that captures life's moments.
 
-When I'm not coding, you'll find me exploring new hiking trails, reading tech blogs, or contributing to open-source projects. I believe in continuous learning and staying curious about emerging technologies.`,
+I believe that the best professionals are those who can blend analytical thinking with creative insight. This portfolio is my space to share my projects, research work, and creative writings with the world.`,
 
     // Career Goals
     careerGoals: [
-        "Lead innovative projects that push the boundaries of web technology",
-        "Contribute to open-source projects that help the developer community",
-        "Build products that positively impact millions of users",
-        "Mentor aspiring developers and share knowledge through writing and speaking",
+        "Build a career in corporate finance or strategic operations",
+        "Contribute to research that bridges academia and industry practice",
+        "Publish insightful articles on finance, business, and management",
+        "Continue creative writing and share perspectives through poetry and essays",
     ],
 
     // Interests
     interests: [
-        { name: "Web Development", icon: "💻" },
-        { name: "Cloud Architecture", icon: "☁️" },
-        { name: "Machine Learning", icon: "🤖" },
-        { name: "Open Source", icon: "🌍" },
-        { name: "Photography", icon: "📸" },
-        { name: "Hiking", icon: "🏔️" },
+        { name: "Financial Analysis", icon: "📊" },
+        { name: "Operations Strategy", icon: "⚙️" },
+        { name: "Business Research", icon: "🔍" },
+        { name: "Creative Writing", icon: "✍️" },
+        { name: "Poetry", icon: "📝" },
+        { name: "Reading", icon: "📚" },
     ],
 };
 
 // Education
 export const education = [
     {
-        degree: "Master of Science in Computer Science",
-        school: "Stanford University",
-        location: "Stanford, CA",
-        period: "2018 - 2020",
-        description: "Specialized in Machine Learning and Distributed Systems. Thesis on 'Scalable Microservices Architecture for Real-time Applications'.",
-        gpa: "3.9/4.0",
+        degree: "Master of Business Administration (MBA)",
+        school: "Your University Name",
+        location: "India",
+        period: "2024 - 2026",
+        description: "Specialization in Finance and Operations Management. Focused on financial modeling, supply chain optimization, and strategic decision-making.",
+        gpa: "Update your GPA",
     },
     {
-        degree: "Bachelor of Science in Computer Science",
-        school: "University of California, Berkeley",
-        location: "Berkeley, CA",
-        period: "2014 - 2018",
-        description: "Dean's List. Led the Web Development Club. Minor in Business Administration.",
-        gpa: "3.8/4.0",
+        degree: "Bachelor's Degree",
+        school: "Your Undergraduate University",
+        location: "India",
+        period: "2020 - 2024",
+        description: "Update with your undergraduate degree and achievements.",
+        gpa: "Update your GPA",
     },
 ];
 
-// Work Experience
+// Experience (Internships, Projects, etc.)
 export const experience = [
     {
-        title: "Senior Full Stack Developer",
-        company: "Tech Innovators Inc.",
-        location: "San Francisco, CA",
-        period: "2022 - Present",
-        description: "Leading the development of a next-generation SaaS platform serving 100K+ users. Architecting microservices infrastructure and mentoring junior developers.",
+        title: "MBA Student",
+        company: "Your University",
+        location: "India",
+        period: "2024 - Present",
+        description: "Pursuing MBA with specialization in Finance and Operations. Engaged in case studies, research projects, and industry collaborations.",
         highlights: [
-            "Reduced page load time by 60% through performance optimization",
-            "Led migration from monolith to microservices architecture",
-            "Implemented CI/CD pipeline reducing deployment time by 80%",
+            "Working on research projects in financial analysis",
+            "Participating in business competitions and case studies",
+            "Contributing articles on business and management topics",
         ],
     },
     {
-        title: "Full Stack Developer",
-        company: "StartupXYZ",
-        location: "San Francisco, CA",
-        period: "2020 - 2022",
-        description: "Built and scaled a fintech application from MVP to 50K active users. Worked directly with founders to define product roadmap.",
+        title: "Add Your Internship/Experience",
+        company: "Company Name",
+        location: "Location",
+        period: "Date Range",
+        description: "Describe your role and responsibilities here.",
         highlights: [
-            "Developed real-time payment processing system handling $1M+ daily transactions",
-            "Built mobile-responsive dashboard with React and TypeScript",
-            "Implemented secure authentication with 2FA and biometrics",
-        ],
-    },
-    {
-        title: "Software Engineering Intern",
-        company: "Google",
-        location: "Mountain View, CA",
-        period: "Summer 2019",
-        description: "Worked on Google Cloud Platform team to improve developer tooling and documentation.",
-        highlights: [
-            "Created internal tool used by 500+ engineers",
-            "Contributed to GCP documentation improvements",
-            "Presented project to senior leadership",
+            "Key achievement 1",
+            "Key achievement 2",
+            "Key achievement 3",
         ],
     },
 ];
 
 // Skills with proficiency (0-100)
 export const skills = {
-    frontend: [
-        { name: "React", level: 95, icon: "⚛️" },
-        { name: "Next.js", level: 90, icon: "▲" },
-        { name: "TypeScript", level: 90, icon: "📘" },
-        { name: "Tailwind CSS", level: 95, icon: "🎨" },
-        { name: "Vue.js", level: 75, icon: "💚" },
-        { name: "HTML/CSS", level: 98, icon: "🌐" },
+    finance: [
+        { name: "Financial Analysis", level: 85, icon: "📊" },
+        { name: "Financial Modeling", level: 80, icon: "📈" },
+        { name: "Valuation", level: 75, icon: "💰" },
+        { name: "Investment Analysis", level: 78, icon: "📉" },
+        { name: "Risk Management", level: 72, icon: "⚠️" },
+        { name: "Corporate Finance", level: 80, icon: "🏢" },
     ],
-    backend: [
-        { name: "Node.js", level: 92, icon: "🟢" },
-        { name: "Python", level: 85, icon: "🐍" },
-        { name: "PostgreSQL", level: 88, icon: "🐘" },
-        { name: "MongoDB", level: 85, icon: "🍃" },
-        { name: "GraphQL", level: 80, icon: "◼️" },
-        { name: "REST APIs", level: 95, icon: "🔌" },
-    ],
-    devops: [
-        { name: "Docker", level: 88, icon: "🐳" },
-        { name: "Kubernetes", level: 75, icon: "☸️" },
-        { name: "AWS", level: 85, icon: "☁️" },
-        { name: "CI/CD", level: 90, icon: "🔄" },
-        { name: "Git", level: 95, icon: "📦" },
-        { name: "Linux", level: 85, icon: "🐧" },
+    operations: [
+        { name: "Supply Chain Management", level: 82, icon: "🔄" },
+        { name: "Project Management", level: 85, icon: "📋" },
+        { name: "Process Optimization", level: 78, icon: "⚙️" },
+        { name: "Quality Management", level: 75, icon: "✅" },
+        { name: "Operations Strategy", level: 80, icon: "🎯" },
+        { name: "Lean Management", level: 70, icon: "📐" },
     ],
     tools: [
-        { name: "VS Code", level: 98, icon: "📝" },
-        { name: "Figma", level: 75, icon: "🎨" },
-        { name: "Jira", level: 85, icon: "📋" },
-        { name: "Postman", level: 90, icon: "📮" },
+        { name: "Microsoft Excel", level: 90, icon: "📗" },
+        { name: "PowerPoint", level: 88, icon: "📊" },
+        { name: "Power BI", level: 75, icon: "📈" },
+        { name: "SAP", level: 65, icon: "🔧" },
+        { name: "Tally", level: 70, icon: "💼" },
+        { name: "SPSS/R", level: 60, icon: "📉" },
+    ],
+    soft: [
+        { name: "Critical Thinking", level: 90, icon: "🧠" },
+        { name: "Communication", level: 88, icon: "💬" },
+        { name: "Leadership", level: 82, icon: "👥" },
+        { name: "Research & Analysis", level: 88, icon: "🔍" },
     ],
 };
 
 // Certifications
 export const certifications = [
     {
-        name: "AWS Certified Solutions Architect",
-        issuer: "Amazon Web Services",
-        date: "2023",
-        credentialId: "ABC123XYZ",
-        link: "https://aws.amazon.com/certification/",
+        name: "Add Your Certification",
+        issuer: "Issuing Organization",
+        date: "Year",
+        credentialId: "Credential ID",
+        link: "https://example.com",
     },
     {
-        name: "Google Cloud Professional Developer",
-        issuer: "Google Cloud",
-        date: "2022",
-        credentialId: "GCP789DEF",
-        link: "https://cloud.google.com/certification/",
-    },
-    {
-        name: "Meta React Developer Certificate",
-        issuer: "Meta",
-        date: "2022",
-        credentialId: "META456GHI",
-        link: "https://www.coursera.org/professional-certificates/meta-react-native",
+        name: "Financial Modeling Certification",
+        issuer: "Example Platform",
+        date: "2024",
+        credentialId: "ABC123",
+        link: "https://example.com",
     },
 ];
 
 // Achievements
 export const achievements = [
     {
-        title: "Best Innovation Award",
-        organization: "TechCrunch Hackathon",
-        year: "2023",
-        description: "Won first place for developing an AI-powered accessibility tool",
+        title: "Add Your Achievement",
+        organization: "Organization Name",
+        year: "Year",
+        description: "Description of your achievement",
     },
     {
-        title: "Open Source Contributor",
-        organization: "GitHub",
-        year: "2022",
-        description: "Top contributor to popular React component library with 10K+ stars",
-    },
-    {
-        title: "Speaker",
-        organization: "React Conf",
-        year: "2022",
-        description: "Presented on 'Building Performant React Applications at Scale'",
+        title: "Academic Excellence",
+        organization: "Your University",
+        year: "2024",
+        description: "Update with your academic achievements",
     },
 ];
 
 // Testimonials
 export const testimonials = [
     {
-        name: "Sarah Johnson",
-        role: "Engineering Manager at Tech Innovators",
-        avatar: "/images/testimonials/sarah.jpg",
-        content: "One of the most talented developers I've worked with. Their ability to solve complex problems while maintaining code quality is exceptional.",
+        name: "Professor Name",
+        role: "Faculty, Your University",
+        avatar: "/images/testimonials/professor.jpg",
+        content: "Add a testimonial from a professor or mentor here.",
     },
     {
-        name: "Michael Chen",
-        role: "CTO at StartupXYZ",
-        avatar: "/images/testimonials/michael.jpg",
-        content: "A true full-stack expert who can architect and implement solutions end-to-end. Their work was instrumental in our growth from MVP to 50K users.",
-    },
-    {
-        name: "Emily Rodriguez",
-        role: "Product Manager at Google",
-        avatar: "/images/testimonials/emily.jpg",
-        content: "Excellent communicator and collaborator. They have a rare combination of technical expertise and product thinking.",
+        name: "Colleague/Manager Name",
+        role: "Position, Organization",
+        avatar: "/images/testimonials/colleague.jpg",
+        content: "Add a testimonial from a colleague or internship manager here.",
     },
 ];

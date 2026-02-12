@@ -1,4 +1,4 @@
-// Blog Posts Data
+// Blog Posts / Articles / Poems Data
 export interface BlogPost {
     slug: string;
     title: string;
@@ -16,158 +16,181 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
     {
-        slug: "building-scalable-react-apps",
-        title: "Building Scalable React Applications: Best Practices for 2024",
-        excerpt: "Learn the essential patterns and practices for building React applications that scale. From state management to code splitting, we cover everything you need to know.",
-        content: `# Building Scalable React Applications
+        slug: "importance-of-financial-literacy",
+        title: "The Importance of Financial Literacy in Today's World",
+        excerpt: "Why understanding finance is crucial for everyone, not just business professionals. A perspective on building financial awareness.",
+        content: `# The Importance of Financial Literacy in Today's World
 
-When it comes to building React applications that can grow with your business, there are several key patterns and practices you need to follow...
+Financial literacy is no longer optional—it's essential. In an era of complex investment products, rising costs, and economic uncertainty, understanding money matters more than ever.
 
-## State Management
+## Why Financial Literacy Matters
 
-One of the most critical decisions in any React application is how you manage state. For large applications, I recommend using a combination of:
+Whether you're a student, professional, or homemaker, having a basic understanding of finance helps you:
+- Make informed decisions about savings and investments
+- Avoid debt traps and manage loans wisely
+- Plan for major life goals like education, home, and retirement
+- Understand the economy and its impact on your life
 
-- **React Query** for server state
-- **Zustand** or **Jotai** for client state
-- **React Context** for theme and authentication
+## Building Financial Awareness
 
-\`\`\`typescript
-import { create } from 'zustand';
-
-interface Store {
-  count: number;
-  increment: () => void;
-}
-
-export const useStore = create<Store>((set) => ({
-  count: 0,
-  increment: () => set((state) => ({ count: state.count + 1 })),
-}));
-\`\`\`
-
-## Code Splitting
-
-Next.js makes code splitting easy with dynamic imports...
+Start small. Learn about budgeting, understand compound interest, explore mutual funds. The journey of a thousand miles begins with a single step.
 
 ## Conclusion
 
-Building scalable React applications requires thoughtful architecture decisions from the start.`,
-        publishedAt: "2024-01-15",
-        author: "Your Name",
-        coverImage: "/images/blog/react-scalable.jpg",
-        category: "React",
-        tags: ["React", "TypeScript", "Architecture", "Best Practices"],
-        readingTime: 8,
+Financial literacy empowers individuals to take control of their future. It's time we made it a priority in our education and daily lives.`,
+        publishedAt: "2024-12-01",
+        author: "Shilpa Pujar",
+        coverImage: "/images/blog/financial-literacy.jpg",
+        category: "Article",
+        tags: ["Finance", "Education", "Personal Finance", "Awareness"],
+        readingTime: 5,
         featured: true,
     },
     {
-        slug: "nextjs-15-features",
-        title: "What's New in Next.js 15: A Complete Overview",
-        excerpt: "Explore the exciting new features in Next.js 15, including Server Actions improvements, better caching, and enhanced developer experience.",
-        content: `# What's New in Next.js 15
+        slug: "lessons-from-mba-journey",
+        title: "Lessons from My MBA Journey: More Than Just Academics",
+        excerpt: "Reflections on the MBA experience—the learning, the challenges, and the growth that happens beyond the classroom.",
+        content: `# Lessons from My MBA Journey
 
-Next.js 15 brings significant improvements to the developer experience and performance...
+Pursuing an MBA is more than attending classes and passing exams. It's a transformative experience that shapes how you think, work, and lead.
 
-## Server Actions Improvements
+## Beyond the Textbooks
 
-Server Actions are now even more powerful with better error handling and streaming support.
+The real learning happens in:
+- Group projects and late-night discussions
+- Case competitions and presentations
+- Networking with diverse minds
+- Stepping out of your comfort zone
 
-## Enhanced Caching
+## Key Takeaways
 
-The new caching mechanisms provide more granular control over how your data is cached...
+1. **Embrace discomfort** - Growth happens when you're challenged
+2. **Collaborate** - The best ideas come from teams, not individuals
+3. **Stay curious** - Keep asking questions, keep learning
+4. **Balance is key** - Academics, activities, and self-care all matter
 
-## Conclusion
+## The Journey Continues
 
-Next.js 15 continues to push the boundaries of what's possible with React.`,
-        publishedAt: "2024-01-10",
-        author: "Your Name",
-        coverImage: "/images/blog/nextjs-15.jpg",
-        category: "Next.js",
-        tags: ["Next.js", "React", "Performance", "Web Development"],
+MBA is not a destination—it's a foundation. The real test begins when we apply these lessons in the real world.`,
+        publishedAt: "2024-11-15",
+        author: "Shilpa Pujar",
+        coverImage: "/images/blog/mba-journey.jpg",
+        category: "Article",
+        tags: ["MBA", "Education", "Personal Growth", "Career"],
         readingTime: 6,
         featured: true,
     },
     {
-        slug: "typescript-advanced-patterns",
-        title: "Advanced TypeScript Patterns Every Developer Should Know",
-        excerpt: "Master advanced TypeScript patterns including conditional types, mapped types, and template literal types to write more robust code.",
-        content: `# Advanced TypeScript Patterns
+        slug: "poem-dreams-and-deadlines",
+        title: "Dreams and Deadlines",
+        excerpt: "A poem about the beautiful chaos of chasing dreams while meeting life's demands.",
+        content: `# Dreams and Deadlines
 
-TypeScript offers powerful type system features that can help you write safer, more maintainable code...
+*A poem*
 
-## Conditional Types
+Between the pages of textbooks and timelines,
+Lives a heart full of stories untold.
+We chase the grades, we meet the deadlines,
+But within us, dreams unfold.
 
-\`\`\`typescript
-type NonNullable<T> = T extends null | undefined ? never : T;
-\`\`\`
+---
 
-## Mapped Types
+The morning coffee, cold again,
+As spreadsheets blur before our eyes.
+Yet somewhere between loss and gain,
+We learn to fall, and still to rise.
 
-Transform existing types into new types with mapped types...
+---
 
-## Conclusion
+For every deadline that we meet,
+A dream quietly takes its form.
+In the chaos, we find our beat,
+In the storm, we become the storm.
 
-These advanced patterns will level up your TypeScript skills.`,
-        publishedAt: "2024-01-05",
-        author: "Your Name",
-        coverImage: "/images/blog/typescript.jpg",
-        category: "TypeScript",
-        tags: ["TypeScript", "JavaScript", "Best Practices"],
-        readingTime: 10,
-        featured: false,
-    },
-    {
-        slug: "docker-for-developers",
-        title: "Docker for Web Developers: A Practical Guide",
-        excerpt: "Learn how to containerize your web applications with Docker. From basics to production-ready setups.",
-        content: `# Docker for Web Developers
+---
 
-Docker has become an essential tool for modern web development...
-
-## Getting Started
-
-\`\`\`dockerfile
-FROM node:20-alpine
-WORKDIR /app
-COPY package*.json ./
-RUN npm install
-COPY . .
-CMD ["npm", "start"]
-\`\`\`
-
-## Conclusion
-
-Docker simplifies deployment and ensures consistency across environments.`,
-        publishedAt: "2023-12-20",
-        author: "Your Name",
-        coverImage: "/images/blog/docker.jpg",
-        category: "DevOps",
-        tags: ["Docker", "DevOps", "Containers", "Deployment"],
-        readingTime: 12,
-        featured: false,
-    },
-    {
-        slug: "tailwind-css-tips",
-        title: "10 Tailwind CSS Tips That Will Change How You Write CSS",
-        excerpt: "Discover powerful Tailwind CSS techniques to speed up your development and create more maintainable styles.",
-        content: `# 10 Tailwind CSS Tips
-
-Tailwind CSS has revolutionized how we write CSS. Here are 10 tips to level up your Tailwind game...
-
-## 1. Use the @apply directive wisely
-
-## 2. Leverage arbitrary values
-
-## Conclusion
-
-These tips will help you become more productive with Tailwind CSS.`,
-        publishedAt: "2023-12-15",
-        author: "Your Name",
-        coverImage: "/images/blog/tailwind.jpg",
-        category: "CSS",
-        tags: ["Tailwind CSS", "CSS", "Frontend", "Design"],
-        readingTime: 5,
+So here's to the dreamers with tired eyes,
+To the believers who still dare.
+The deadlines will come, the sun will rise,
+And our dreams? They're already there.`,
+        publishedAt: "2024-10-20",
+        author: "Shilpa Pujar",
+        coverImage: "/images/blog/poems.jpg",
+        category: "Poetry",
+        tags: ["Poetry", "Dreams", "Life", "Inspiration"],
+        readingTime: 2,
         featured: true,
+    },
+    {
+        slug: "understanding-supply-chain-disruptions",
+        title: "Understanding Supply Chain Disruptions: Lessons from Recent Events",
+        excerpt: "An exploration of how global events have reshaped supply chain thinking and what businesses can learn from disruptions.",
+        content: `# Understanding Supply Chain Disruptions
+
+The past few years have taught us that supply chains are more fragile than we thought. From the pandemic to geopolitical tensions, disruptions have become the new normal.
+
+## What We've Learned
+
+- **Diversification is crucial** - Single-source dependency is risky
+- **Visibility matters** - Real-time tracking and transparency are essential
+- **Flexibility over efficiency** - Building buffers and alternatives pays off
+- **Local sourcing** - Reducing dependence on distant suppliers
+
+## The Way Forward
+
+Resilient supply chains require investment in technology, relationships, and strategic planning. It's not just about cost—it's about continuity.
+
+## Conclusion
+
+The companies that thrive will be those that adapt, anticipate, and build supply chains designed for uncertainty.`,
+        publishedAt: "2024-09-10",
+        author: "Shilpa Pujar",
+        coverImage: "/images/blog/supply-chain.jpg",
+        category: "Article",
+        tags: ["Supply Chain", "Operations", "Business", "Strategy"],
+        readingTime: 7,
+        featured: false,
+    },
+    {
+        slug: "poem-silent-strength",
+        title: "Silent Strength",
+        excerpt: "A poem celebrating the quiet resilience that carries us through difficult times.",
+        content: `# Silent Strength
+
+*A poem*
+
+Not all strength roars like thunder,
+Some strength is soft, like rain.
+It doesn't tear the world asunder,
+It quietly heals the pain.
+
+---
+
+In the silence of the midnight hour,
+When hope feels far away,
+There blooms an unseen flower—
+Strength that helps us stay.
+
+---
+
+It's found in small acts of kindness,
+In the courage to begin again,
+In walking through the blindness,
+In embracing joy and pain.
+
+---
+
+So when life feels too heavy to bear,
+Remember what you've been through.
+Your silent strength is always there,
+And it will carry you.`,
+        publishedAt: "2024-08-05",
+        author: "Shilpa Pujar",
+        coverImage: "/images/blog/strength.jpg",
+        category: "Poetry",
+        tags: ["Poetry", "Strength", "Resilience", "Life"],
+        readingTime: 2,
+        featured: false,
     },
 ];
 

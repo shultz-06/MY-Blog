@@ -1,61 +1,30 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import { Providers } from '@/components/Providers';
-import { Header, Footer } from '@/components/layout';
+import { ViewTransitions } from 'next-view-transitions';
+import { Header } from '@/components/layout/header';
+import { Footer } from '@/components/layout/footer';
+import { siteInfo } from '@/data/siteData';
 
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-inter',
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
   title: {
-    default: 'Portfolio | Full Stack Developer',
-    template: '%s | Portfolio',
+    default: `${siteInfo.title} | ${siteInfo.subtitle}`,
+    template: `%s | ${siteInfo.title}`,
   },
-  description: 'Personal portfolio and blog of a passionate Full Stack Developer. Showcasing projects, skills, and technical insights.',
-  keywords: ['portfolio', 'developer', 'full stack', 'web development', 'react', 'nextjs', 'typescript'],
-  authors: [{ name: 'Your Name' }],
-  creator: 'Your Name',
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://yourportfolio.com',
-    siteName: 'Portfolio',
-    title: 'Portfolio | Full Stack Developer',
-    description: 'Personal portfolio and blog of a passionate Full Stack Developer.',
-    images: [
-      {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Portfolio',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Portfolio | Full Stack Developer',
-    description: 'Personal portfolio and blog of a passionate Full Stack Developer.',
-    creator: '@yourusername',
-    images: ['/og-image.jpg'],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  verification: {
-    google: 'your-google-verification-code',
-  },
+  description: siteInfo.heading,
+  keywords: ['portfolio', 'finance', 'operations', 'MBA', 'strategy'],
+  authors: [{ name: siteInfo.title }],
+  creator: siteInfo.title,
 };
 
 export default function RootLayout({
@@ -64,24 +33,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#3b82f6" />
-      </head>
-      <body className={`${inter.variable} font-sans antialiased`}>
-        <Providers>
-          <div className="min-h-screen flex flex-col">
+    <ViewTransitions>
+      <html lang="en">
+        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+          <div className="2xl:max-w-[1920px] mx-auto">
             <Header />
-            <main className="flex-1 pt-20">
-              {children}
-            </main>
+            {children}
             <Footer />
           </div>
-        </Providers>
-      </body>
-    </html>
+        </body>
+      </html>
+    </ViewTransitions>
   );
 }
+
